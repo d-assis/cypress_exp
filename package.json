@@ -4,7 +4,9 @@
   "description": "cypress project package",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "cy-open": "./node_modules/.bin/cypress open",
+    "cy-run": "./node_modules/.bin/cypress run",
+    "cy:run": "./node_ modules/performance-now/test/scripts/cypress.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +25,9 @@
   },
   "homepage": "https://github.com/d-assis/cypress_exp#readme",
   "devDependencies": {
-    "cypress": "^9.2.1"
+    "cypress": "^9.2.1",
+    "fs-extra": "^10.0.1",
+    "mochawesome": "^7.1.0",
+    "mochawesome-merge": "^4.2.1"
   }
 }

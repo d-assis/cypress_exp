@@ -1,1 +1,11 @@
-{}
+{
+    "reporter": "mochawesome",
+    "reporterOptions":{
+        "overwrite": false,
+        "html": true,
+        "json": true
+    },
+    "video": false
+
+
+}
