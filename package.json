@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "cy-open": "./node_modules/.bin/cypress open",
-    "cy-run": "./node_modules/.bin/cypress run",
-    "cy:run": "./node_ modules/performance-now/test/scripts/cypress.js"
+    "cy-run": "./node_modules/.bin/cypress run --spec ./cypress/integration/2-advanced-examples/**/*",
+    "merge-json": "mochawesome-merge cypress/report/mochawesome-report/*.json > cypress/report/output.json",
+    "merge-html": "marge cypress/report/output.json --reportDir ./ --inline",
+    "delete-reports": "node deleteReports.js"
   },
   "repository": {
     "type": "git",

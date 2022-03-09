@@ -1,11 +1,14 @@
 {
     "reporter": "mochawesome",
     "reporterOptions":{
+        "charts": true,
         "overwrite": false,
-        "html": true,
-        "json": true
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/report/mochawesome-report"
     },
-    "video": false
+    "video": false,
+    "screenshot": false
 
 
 }
