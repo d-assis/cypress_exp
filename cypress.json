@@ -8,7 +8,8 @@
         "reportDir": "cypress/report/mochawesome-report"
     },
     "video": false,
-    "screenshot": false
+    "screenshot": false,
+    "baseUrl": "http://192.168.15.64:3000/"
 
 
 }

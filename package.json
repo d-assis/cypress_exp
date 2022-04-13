@@ -8,7 +8,9 @@
     "cy-run": "./node_modules/.bin/cypress run --spec ./cypress/integration/2-advanced-examples/**/*",
     "merge-json": "mochawesome-merge cypress/report/mochawesome-report/*.json > cypress/report/output.json",
     "merge-html": "marge cypress/report/output.json --reportDir ./ --inline",
-    "delete-reports": "node deleteReports.js"
+    "delete-reports": "node deleteReports.js",
+    "cycle":"node deleteReports.js && ./node_modules/.bin/cypress run --spec ./cypress/integration/2-advanced-examples/**/* && mochawesome-merge cypress/report/mochawesome-report/*.json > cypress/report/output.json && marge cypress/report/output.json --reportDir ./ --inline"
+    
   },
   "repository": {
     "type": "git",
