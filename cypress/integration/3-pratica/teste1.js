@@ -34,9 +34,14 @@ describe('primeiros testes',()=>{
         cy.get('button[data-test="signin-submit"]').should("be.disabled")
      });
 
-    it('login válido',()=>{
-        cy.get("#username").type("Giovanna74");
-        cy.get("#password").type("$2a$10$5PXHGtcsckWtAprT5/JmluhR13f16BL8SIGhvAKNP.Dhxkt69FfzW");
-        cy.get('button[data-test="signin-submit"]').click()
+    it('login válido e logout',()=>{
+        cy.get("#username").type("Katharina_Bernier");
+        cy.get("#password").type("s3cret");
+        cy.get('button[data-test="signin-submit"]').click();
+        cy.contains("Edgar J");
+        cy.contains("Logout").click()
+        cy.contains("Sign in")
+        cy.url().then((url) => expect(url).to.include("signin"))
+        
      });
 })
