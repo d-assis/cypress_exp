@@ -5,7 +5,7 @@ function hash(){return Number.parseInt(Math.random() * 1000000)}
 //exports.UID = function(){return Number.toString(hash())}
 //export const UID = hash()
 
-//console.log(hash())
+console.log(hash())
 
 /*
 export let userForm = {

@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2022-04-20T03:13:56.248Z",
-    "end": "2022-04-20T03:13:56.549Z",
-    "duration": 301,
+    "start": "2022-04-20T13:44:58.605Z",
+    "end": "2022-04-20T13:44:59.016Z",
+    "duration": 411,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "a5399f13-43dc-41d9-b241-84c57a51ef32",
+      "uuid": "d14573bb-dc90-4350-9cab-2f538db5cd36",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "501d08c6-3502-464d-a0c0-f86fbd605ab5",
+          "uuid": "78ebd743-5cf3-455a-b9b6-776988a9a70b",
           "title": "testes de API",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "ciclo de usuário",
               "fullTitle": "testes de API ciclo de usuário",
               "timedOut": null,
-              "duration": 288,
+              "duration": 376,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "api.endpoints.signUp().then(response => {\n  expect(response.status).to.eql(201);\n  cy.log(response.body);\n  api.endpoints.login(response.body.user.username).its('status').should('eql', 200);\n  api.endpoints.updateUser(response.body.user.id).its('status').should('eql', 204);\n  api.endpoints.chargeMoney(response.body.user.id).its('status').should('eql', 200);\n  api.endpoints.checkTransactions().then(r => {\n    expect(r.status).to.eql(200);\n  });\n});",
               "err": {},
-              "uuid": "ef93985c-4ca4-4201-993d-9be0154784ec",
-              "parentUUID": "501d08c6-3502-464d-a0c0-f86fbd605ab5",
+              "uuid": "67aaa044-b2f4-4458-b76d-0571e0472e4c",
+              "parentUUID": "78ebd743-5cf3-455a-b9b6-776988a9a70b",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "ef93985c-4ca4-4201-993d-9be0154784ec"
+            "67aaa044-b2f4-4458-b76d-0571e0472e4c"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 288,
+          "duration": 376,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
